@@ -1,0 +1,43 @@
+@import url('topbar.css');
+
+.producto { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.producto h4 {
+	font-family: UbuntuNerd;
+	text-align: center;
+}
+
+.producto p {
+  font-family: UbuntuNerd;
+  margin: 30px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.producto img {
+  width: 250px;
+  height: 100px;
+}
+
+button {
+	width: 125px;
+	border: none;
+	background-color: #A3E7FC;
+	border-radius: 10px;
+	font-family: "UbuntuNerd";
+	transition: all 0.2s ease-in-out;
+
+	padding: 10px;
+}
+
+button:hover {
+	background-color: #C1F1FF;
+	transform: scale(1.05); 
+}

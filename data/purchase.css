@@ -1,0 +1,102 @@
+@import url('topbar.css');
+
+img {
+	width: 220px;
+	height: 100px;
+
+	border-radius: 10px;
+}
+
+.main {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.main .product1 {
+	width: 230px;
+	height: 300px;
+	background-color: #F0F0F2;
+
+	border-radius: 10px;
+	text-align: center;
+
+	transition: all 0.2s ease-in-out;
+
+	margin: 20px;
+	padding: 20px;
+}
+
+.main .product1:hover {
+	background-color: #F5F5F7;
+	transform: scale(1.05); 
+}
+
+.main .product2 {
+	width: 230px;
+	height: 300px;
+	background-color: #F0F0F2;
+
+	border-radius: 10px;
+	text-align: center;
+
+	transition: all 0.2s ease-in-out;
+
+	margin: 20px;
+	padding: 20px;
+}
+
+.main .product2:hover {
+	background-color: #F5F5F7;
+	transform: scale(1.05); 
+}
+
+.main .product1 input {
+	
+	width: 35px;
+	height: 28px;
+	border-radius: 5px;
+	border: none;
+
+	transform: translateY(-2px);
+	margin: -10px;
+
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.main .product1 input::-webkit-outer-spin-button,
+.main .product1 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main .product1 p {
+	font-family: UbuntuNerd;
+}
+
+.main button {
+	width: 125px;
+	border: none;
+	background-color: #A3E7FC;
+	border-radius: 10px;
+	font-family: "UbuntuNerd";
+	transition: all 0.2s ease-in-out;
+
+	padding: 10px;
+	margin: 10px;
+}
+
+.main .product1 .p1c button{
+	width: 30px;
+	height: 30px;
+}
+
+.main button:hover {
+	background-color: #C1F1FF;
+	transform: scale(1.05); 
+}
+
+

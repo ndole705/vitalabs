@@ -1,0 +1,68 @@
+@import url('topbar.css');
+
+.main {
+	margin: 20px;
+}
+
+.main .EsenciaVital{
+  display: flex;
+  align-items: center;
+}
+
+.idk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main h2 h4 {
+	font-family: UbuntuNerd;
+}
+
+.main p {
+  font-family: UbuntuNerd;
+  margin: 50px;
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: left;
+}
+
+.main img {
+  width: 250px;
+  height: 100px;
+}
+
+.main a {
+  display: inline-block;
+  text-decoration: None;
+  color: black;
+  background-color: #A3E7FC;
+  border-radius: 10px;
+  font-family: UbuntuNerd;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  margin: -25px 150px;
+}
+
+.main a:hover {
+	background-color: #C1F1FF;
+	transform: scale(1.05); 
+}
+
+
+button {
+	width: 125px;
+	border: none;
+	background-color: #A3E7FC;
+	border-radius: 10px;
+	font-family: "UbuntuNerd";
+	transition: all 0.2s ease-in-out;
+
+	padding: 10px;
+	margin: 10px;
+}
+
+button:hover {
+	background-color: #C1F1FF;
+	transform: scale(1.05); 
+}
