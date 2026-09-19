@@ -1,0 +1,102 @@
+/* ---------- Fuentes ---------- */
+/* Las rutas son relativas a este archivo (data/style/) */
+
+@font-face {
+  font-family: "UbuntuNerd";
+  src: url("../fonts/UbuntuNerdFont-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UbuntuNerd";
+  src: url("../fonts/UbuntuNerdFontPropo-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Variables ---------- */
+
+:root {
+  --azul-titulo: #36ADF7;
+  --azul-boton: #62BFF8;
+  --azul-boton-hover: #8ED1FA;
+  --texto: #000;
+}
+
+/* ---------- Base ---------- */
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+
+  font-family: "UbuntuNerd", sans-serif;
+  color: var(--texto);
+  background: linear-gradient(180deg, rgba(224, 242, 254, 1) 0%, rgba(250, 243, 222, 1) 70%);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* ---------- Barra superior ---------- */
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 75px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.topbar h1 {
+  margin: 10px;
+}
+
+.topbar .buttons a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 10px;
+  padding: 10px;
+
+  color: var(--texto);
+  background: var(--azul-boton);
+  border-radius: 15px;
+  transition: background 0.25s ease, transform 0.25s ease;
+  box-sizing: border-box;
+}
+
+.topbar .buttons a:hover,
+.topbar .buttons a:focus-visible {
+  background: var(--azul-boton-hover);
+  transform: scale(1.1);
+}
+
+/* ---------- Accesibilidad ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  a {
+    transition: none;
+  }
+}
