@@ -1,6 +1,3 @@
-/* ---------- Fuentes ---------- */
-/* Las rutas son relativas a este archivo (data/style/) */
-
 @font-face {
   font-family: "UbuntuNerd";
   src: url("../fonts/UbuntuNerdFont-Regular.ttf") format("truetype");
@@ -17,16 +14,12 @@
   font-display: swap;
 }
 
-/* ---------- Variables ---------- */
-
 :root {
   --azul-titulo: #36ADF7;
   --azul-boton: #62BFF8;
   --azul-boton-hover: #8ED1FA;
   --texto: #000;
 }
-
-/* ---------- Base ---------- */
 
 html {
   scroll-behavior: smooth;
@@ -50,8 +43,6 @@ select,
 textarea {
   font-family: inherit;
 }
-
-/* ---------- Barra superior ---------- */
 
 .topbar {
   display: flex;
@@ -88,8 +79,6 @@ textarea {
   background: var(--azul-boton-hover);
   transform: scale(1.1);
 }
-
-/* ---------- Accesibilidad ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   html {
