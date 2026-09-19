@@ -1,14 +1,10 @@
 @import url("mainclass.css");
 
-/* ---------- Variables de esta página ---------- */
-
 :root {
   --texto: #09152B;
   --texto-suave: #354354;
   --ancho: 68rem;
 }
-
-/* ---------- Base ---------- */
 
 a:focus-visible {
   outline: 3px solid var(--texto);
@@ -20,8 +16,6 @@ h2,
 h3 {
   line-height: 1.15;
 }
-
-/* ---------- Botón principal (píldora) ---------- */
 
 .btn {
   display: inline-block;
@@ -40,8 +34,6 @@ h3 {
 .btn:focus-visible {
   background: var(--texto-suave);
 }
-
-/* ---------- Header: logo | menú | botón ---------- */
 
 .site-header {
   display: grid;
@@ -84,10 +76,6 @@ h3 {
   justify-self: end;
 }
 
-/* ---------- Hero ---------- */
-
-
-
 .hero {
   display: grid;
   place-items: center;
@@ -113,8 +101,6 @@ h3 {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   line-height: 1.5;
 }
-
-/* ---------- Beneficios: 3 columnas ---------- */
 
 .features {
   max-width: var(--ancho);
@@ -173,8 +159,6 @@ h3 {
   line-height: 1.6;
 }
 
-/* ---------- Sobre nosotros: imagen + texto ---------- */
-
 .about {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -213,8 +197,6 @@ h3 {
   font-size: 1.1rem;
 }
 
-/* ---------- Pie de página ---------- */
-
 footer {
   padding: 2rem 1.25rem;
   text-align: center;
@@ -224,8 +206,6 @@ footer {
 footer p {
   margin: 0;
 }
-
-/* ---------- Pantallas pequeñas ---------- */
 
 @media (max-width: 48rem) {
   .site-header {
@@ -247,8 +227,6 @@ footer p {
     gap: 2rem;
   }
 }
-
-/* ---------- Animaciones reducidas ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   .btn,
